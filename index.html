@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanistic Interpretability in Brains and Machines – COSYNE 2026 Workshop</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --text-light: #555;
+      --border: #e0e0e0;
+      --bg-light: #f7f7f7;
+      --max-w: 960px;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg-light);
+    }
+    a { color: #0055aa; }
+    a:hover { text-decoration: underline; }
+
+    /* Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+      padding: 0 1.5rem;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      gap: 2rem;
+      height: 48px;
+      align-items: center;
+    }
+    nav a { text-decoration: none; font-weight: 500; color: var(--text); }
+    nav a:hover { color: #0055aa; }
+
+    /* Hero */
+    .hero {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1.5rem 2.5rem;
+    }
+    .hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+      max-width: 820px;
+    }
+    .hero-meta {
+      color: var(--text-light);
+      font-size: 1.05rem;
+    }
+    .hero-meta span { margin-right: 1.5rem; }
+
+    /* Sections */
+    section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--border);
+    }
+    p { margin-bottom: 0.9rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* Organizer Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.2rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .card img {
+      width: 80px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+      background: #ddd;
+      flex-shrink: 0;
+    }
+    .card-info h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.2rem; }
+    .card-info p { font-size: 0.9rem; color: var(--text-light); margin: 0; }
+    .card-info a { font-size: 0.9rem; }
+
+    /* Schedule Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+    th {
+      background: var(--bg-light);
+      text-align: left;
+      padding: 0.6rem 0.8rem;
+      border: 1px solid var(--border);
+      font-weight: 600;
+    }
+    td {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+    td:first-child, td:nth-child(2) {
+      white-space: nowrap;
+      width: 1%;
+    }
+    .break td { color: var(--text-light); font-style: italic; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.5rem; }
+      nav ul { gap: 1.2rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#organizers">Organizers</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Mechanistic Interpretability in Brains and Machines: Shared Concepts and Converging Methods</h1>
+    <div class="hero-meta">
+      <span>COSYNE 2026 Workshop</span>
+      <span>March 17, 2026</span>
+      <span>Cascais, Portugal</span>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    This workshop brings together researchers from neuroscience and AI to explore the shared foundations of mechanistic interpretability across biological and artificial neural networks. Despite growing interest in understanding how neural systems compute, a gap remains between the methods and frameworks developed in machine learning interpretability research and those used in systems neuroscience.
+  </p>
+  <p>
+    Our goal is to unite theorists and experimentalists investigating neural mechanisms, representational geometry, and computational principles — identifying shared concepts and converging methods that can advance both fields.
+  </p>
+</section>
+
+<section id="organizers">
+  <h2>Organizers</h2>
+  <div class="cards">
+    <div class="card">
+      <!-- Optionally add: <img src="images/ciana.jpg" alt="Ciana Deveau"> -->
+      <div class="card-info">
+        <h3>Ciana Deveau</h3>
+        <p>[Affiliation]</p>
+      </div>
+    </div>
+    <div class="card">
+      <!-- Optionally add: <img src="images/jake.jpg" alt="Jake Russin"> -->
+      <div class="card-info">
+        <h3>Jake Russin</h3>
+        <p>[Affiliation]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2>Schedule &mdash; March 17, 2026</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>End</th>
+        <th>Title</th>
+        <th>Speaker(s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:30 AM</td>
+        <td>9:45 AM</td>
+        <td>Introduction</td>
+        <td>Ciana Deveau &amp; Jake Russin</td>
+      </tr>
+      <tr>
+        <td>9:45 AM</td>
+        <td>10:15 AM</td>
+        <td>TBD</td>
+        <td>Mark Histed</td>
+      </tr>
+      <tr>
+        <td>10:15 AM</td>
+        <td>10:45 AM</td>
+        <td>Revealing Convergent Algorithms in Brains and Machines using Mechanistic Interpretability</td>
+        <td>Mikey Lepori</td>
+      </tr>
+      <tr class="break">
+        <td>10:45 AM</td>
+        <td>11:00 AM</td>
+        <td>Coffee break</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11:00 AM</td>
+        <td>11:30 AM</td>
+        <td>Understanding neural mechanisms by studying the dynamics of the representational geometry</td>
+        <td>Stefano Fusi</td>
+      </tr>
+      <tr>
+        <td>11:30 AM</td>
+        <td>12:00 PM</td>
+        <td>Shortcomings of Interpretability Tools for Understanding Long-Context Reasoning in Language Models</td>
+        <td>Jack Merullo</td>
+      </tr>
+      <tr class="break">
+        <td>12:00 PM</td>
+        <td>3:15 PM</td>
+        <td>Lunch</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3:15 PM</td>
+        <td>3:45 PM</td>
+        <td>Surfing symmetries in overparameterized neural networks: Consequences for representational comparisons between biological and artificial neural networks and the brain</td>
+        <td>Andrew Saxe</td>
+      </tr>
+      <tr>
+        <td>3:45 PM</td>
+        <td>4:15 PM</td>
+        <td>Back to Bayes: Formalizing Mechanistic Interpretability in the Language of Cognitive Science</td>
+        <td>Ekdeep Lubana <em>(virtual)</em></td>
+      </tr>
+      <tr class="break">
+        <td>4:15 PM</td>
+        <td>4:30 PM</td>
+        <td>Coffee break</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4:30 PM</td>
+        <td>5:00 PM</td>
+        <td>The Compositional Geometry of Open-ended Reasoning</td>
+        <td>Ida Momennejad <em>(virtual)</em></td>
+      </tr>
+      <tr>
+        <td>5:00 PM</td>
+        <td>5:30 PM</td>
+        <td>Bidirectional Lessons Between Interpretability and Neuroscience</td>
+        <td>Grace Lindsay <em>(virtual)</em></td>
+      </tr>
+      <tr>
+        <td>5:30 PM</td>
+        <td>6:00 PM</td>
+        <td>Panel</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  COSYNE 2026 Workshop &middot; Mechanistic Interpretability in Brains and Machines &middot; March 17, 2026
+</footer>
+
+</body>
+</html>
